@@ -1,5 +1,9 @@
 # Semantic Engine Architecture (SEA)
 
+> Drafted and maintained by **Simen Li**  
+> Initial public draft: **2025-12**  
+> Status: **Early architecture specification — subject to iteration**
+
 A formal architecture for semantic-driven reasoning, non-linear cognitive operators, profile-guided behavior, and an extensible plugin ecosystem.
 
 SEA is not a product nor a framework—it is a **specification project** intended to define the foundational structure required to support high-integrity co-modeling between humans and AI systems.
@@ -54,10 +58,16 @@ SEA is **not**:
 - a particular LLM  
 - a specific prompt template  
 - a persona  
-- a software product  
-- a cognitive theory tied to any discipline  
+- a single implementation or product
 
-SEA is an **engineering architecture** for reasoning.
+Instead, SEA plays the role of a **public architecture layer**:
+
+- The **specifications** in this repository (SEA Core, Profile, Protocols, UE, SR)
+  are intended to be openly available and evolvable.
+- **Concrete SEA Engine implementations** (runtime, orchestration, products) may be
+  private, experimental, or hosted in separate repositories.
+- This separation is intentional: the *architecture* should be a shared, inspectable
+  asset; the *engines* built on top of it can vary and compete.
 
 ---
 
@@ -96,6 +106,21 @@ A personalization layer specifying:
 - tension-weighting rules  
 
 Profiles do not modify SEA Core; they guide runtime behavior.
+
+### **Profile vs Self Model (out of scope for this repo)**
+
+In the broader SEA ecosystem, a **Self Model** (sometimes called a *Base Self Model*
+or *Self Model Kernel*) describes *who* the human collaborator is — their cognitive
+rhythms, tensions, prohibitions, and long-term preferences.
+
+SEA itself **does not define** a particular Self Model schema. Instead, it defines:
+
+- how a Self Model (from any schema) can be **bridged** into a concrete
+  **Runtime Profile** that the SEA Engine can consume, and
+- how that Profile influences operator choice, sequencing, and behavior.
+
+Self Model specifications and compilers (e.g. SMKC) are designed to sit **above**
+SEA as separate, optional layers.
 
 ### **Plugin**
 Optional extensions providing additional operators.  
@@ -150,6 +175,18 @@ This layered structure ensures:
 - **Runtime** executes Operators and Sequencer logic  
 - **Profile** adapts runtime behavior  
 - **Plugins** extend operator sets without altering the core
+
+In this repository, **only the lower two layers are normative**:
+
+- **SEA Core Spec** — defines operators, tensions, profiles, and protocols.  
+- **SEA Runtime Profile** — defines how personalization is exposed to the Engine.
+
+The **SEA Runtime Engine** and **Plugins** are intentionally left open:
+
+- they can be implemented as prompt-based systems, custom GPTs,
+  dedicated services, or hybrid architectures;
+- they may be private (e.g. used in a product) or open-sourced separately;
+- multiple engines can coexist as long as they conform to the Core Spec contracts.
 
 ---
 
