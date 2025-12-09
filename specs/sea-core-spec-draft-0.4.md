@@ -1,8 +1,8 @@
-# SEA Core Spec – Formal Draft 0.2
+# SEA Core Spec – Formal Draft 0.4
 Semantic Engine Architecture (SEA)
 
 **Status:** Draft (Normative except Appendix A and B)  
-**Date:** 2025-12-08  
+**Date:** 2025-12-09  
 **Author:** Simen
 
 ---
@@ -50,8 +50,6 @@ SEA is a **specification defining what a semantic reasoning engine must do**.
 
 ## 2. Terminology
 
-## 2. Terminology
-
 | Term | Definition |
 |------|------------|
 | **SEA Core** | The normative, immutable specification defined here. |
@@ -60,6 +58,9 @@ SEA is a **specification defining what a semantic reasoning engine must do**.
 | **Sequencer** | Component that determines the next Operator based on Tension signals and the active Rhythm Specification. |
 | **Tension** | Any ambiguity, conflict, constraint, or trade-off affecting progression. |
 | **Cognitive State (CS)** | The Runtime’s current reasoning posture, minimally including active Operator, relevant artifacts (models, structures, Tension), and any active rhythm / mode tags. |
+| **Functional Zone** | A conceptual grouping of cognitive roles within the Cognitive State space (e.g., semantic, abstract, structural, tension, decision, observe, meta-reflect). Functional Zones are used to describe *what kind of work* is being done, independent of any specific Persona or task. |
+| **Core Functional Layers** | The five canonical Functional Zones defined in §4 that MUST remain representable in all conformant Runtimes: Semantic Interpretation, Abstract Modeling, Layered Structuring, Tension Analysis, Decision Synthesis. |
+| **Auxiliary Functional Zones** | Recognized but non-mandatory Functional Zones (e.g., Observe, Meta-Reflect) that MAY appear in RhythmSpecs and internal Runtime representations, but are not required for minimal SEA Core conformance in v0. |
 | **Rhythm Specification (RhythmSpec)** | A declarative description of allowed Cognitive States and transitions among Operators, including initial state, transition conditions, and termination conditions. |
 | **SEA Profile** | Personalization layer that adjusts reasoning tendencies (e.g., biases, weightings) without altering SEA Core semantics or Operator definitions. |
 | **SEA Plugin** | Optional module introducing new Operators into the SEA Runtime. |
@@ -98,7 +99,7 @@ This ensures a **clean, non-inverted dependency graph** and preserves SEA Core s
 
 ## 4. SEA Core Cognitive Model
 
-SEA defines five conceptual cognitive layers:
+SEA defines an initial canonical set of five conceptual cognitive layers:
 
 1. Semantic Interpretation Layer  
 2. Abstract Modeling Layer  
@@ -106,14 +107,21 @@ SEA defines five conceptual cognitive layers:
 4. Tension Analysis Layer  
 5. Decision Synthesis Layer  
 
-These layers:
+These layers are intended as a **minimal, non-exhaustive basis** for describing
+reasoning over complex problems. They:
 
 - Are non-linear.  
 - Have no fixed pipeline order.  
 - MUST allow re-entry into any layer.  
 - MUST allow iterative and tension-driven traversal.  
 
-The conceptual layering MUST NOT be interpreted as a rigid sequence of steps.
+Runtimes MAY introduce additional internal sub-layers or alternative
+decompositions, as long as:
+
+- The functional roles covered by the five canonical layers remain representable, and  
+- The overall Cognitive State space remains compatible with RhythmSpec semantics.
+
+---
 
 ### 4.1 Cognitive State Space
 
@@ -133,6 +141,96 @@ SEA Core only requires that:
 - the state space is available to the Runtime, and  
 - state transitions follow an explicit RhythmSpec rather than an implicit, hard-coded pipeline.
 
+---
+
+### 4.2 Core and Auxiliary Functional Zones
+
+SEA v0 distinguishes between:
+
+- **Core Functional Layers** – the five canonical layers defined above; and  
+- **Auxiliary Functional Zones** – additional, recognized cognitive roles
+  that are useful for RhythmSpec design and future evolution, but are not
+  required for minimal Runtime conformance.
+
+#### 4.2.1 Core Functional Layers (Recap)
+
+The five Core Functional Layers are:
+
+1. **Semantic Interpretation**  
+   - Interpreting and framing what is being talked about and why it matters.
+
+2. **Abstract Modeling**  
+   - Compressing situations into models, patterns, and conceptual structures.
+
+3. **Layered Structuring**  
+   - Carving situations into layers, components, interfaces, and responsibilities.
+
+4. **Tension Analysis**  
+   - Surfacing and classifying tensions: conflicts, ambiguity, overload,
+     trade-offs, misalignment, constraints.
+
+5. **Decision Synthesis**  
+   - Integrating models, structures, and tensions into committed decisions or
+     strategic moves.
+
+A conformant Runtime MUST ensure that these five functional roles remain
+representable within its Cognitive State space, even if it chooses to implement
+additional internal sub-layers or alternative decompositions.
+
+#### 4.2.2 Auxiliary Functional Zones in v0
+
+SEA v0 recognizes, but does not require, at least the following Auxiliary
+Functional Zones:
+
+1. **Observe Zone**  
+   - Role: Gathering or revisiting raw material for reasoning.  
+   - Examples (non-normative):
+     - Reading or re-reading user input or prior conversation segments.  
+     - Retrieving documents, examples, or external references.  
+     - Calling external tools (e.g., search, code execution) to obtain facts.  
+   - Normative status:
+     - Runtimes MAY represent Observe-oriented states in their Cognitive State
+       space and RhythmSpecs.  
+     - SEA Core v0 does **not** prescribe tool semantics or IO mechanisms; such
+       details are considered implementation-specific or Plugin-level concerns.
+
+2. **Meta-Reflect Zone**  
+   - Role: Reflecting on the adequacy of the current reasoning *process* or
+     Rhythm, rather than only on the content being reasoned about.  
+   - Examples (non-normative):
+     - Questioning whether the current approach, granularity, or framing is
+       appropriate.  
+     - Deciding to restart from a different framing or to switch to a different
+       RhythmSpec.  
+   - Normative status:
+     - Runtimes MAY represent Meta-Reflect states in their Cognitive State space
+       and RhythmSpecs.  
+     - SEA Core v0 does **not** require that Meta-Reflect be able to modify
+       RhythmSpecs dynamically; any such meta-rhythm behavior, if present,
+       MUST be explicitly governed by higher-order rules and is considered
+       an advanced feature.
+
+#### 4.2.3 Relationship to RhythmSpec and Conformance
+
+- RhythmSpecs MAY define states that correspond to Auxiliary Functional Zones
+  (e.g., `OBSERVE`, `META_REFLECT`), alongside states mapped to Core Functional
+  Layers.  
+- A conformant Runtime:
+  - MUST be able to represent and execute RhythmSpecs that refer only to the
+    five Core Functional Layers; and  
+  - MAY choose to support additional states associated with Auxiliary Functional
+    Zones, but such support is not required for minimal conformance in v0.
+
+This design allows SEA v0 to:
+
+- Standardize a minimal, widely applicable basis (the five Core Functional
+  Layers); while  
+- Explicitly reserving conceptual “slots” for Observe and Meta-Reflect style
+  behavior, so that future revisions and Discovery Engines can make use of them
+  without breaking compatibility.
+
+
+---
 
 ## 5. Minimal Operator Set (Normative)
 
@@ -759,7 +857,9 @@ This RhythmSpec uses the following Cognitive States:
   - Primary Operator(s): `CoModel` (meta mode), optional plugins  
   - Mode tags: `["meta", "reflection"]`  
   - Role: Reflect on the adequacy of the current rhythm itself, not just the
-    content being reasoned about.
+    content being reasoned about. This state is an example of a Meta-Reflect
+    Auxiliary Functional Zone as described in §4.2.2.
+
 
 ---
 
