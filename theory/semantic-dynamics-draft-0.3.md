@@ -1,4 +1,4 @@
-# Semantic Dynamics – Draft 0.2
+# Semantic Dynamics – Draft 0.3
 ### *The Semantic Physics Layer for SEA-based Reflection Systems*
 
 ---
@@ -88,13 +88,13 @@ For convenience, this theory will refer to one such event as a **mind-pop**:
 
 > **mind-pop (n.)**  
 > A thought, feeling, or inner sentence that keeps looping in one’s head,  
-> intense or persistent enough that it wants to “pop out” into language.
+> intense or persistent enough that it wants to "pop out" into language.
 
 Examples:
 
-- “I really want to leave this job, but I’m scared I’ll mess up everything.”  
-- “我好像一直在辜負別人的期待，可是我又很想做自己的事。”  
-- “Why do I keep postponing this one email? It’s ridiculous, but I feel stuck.”
+- "I really want to leave this job, but I’m scared I’ll mess up everything."  
+- "我好像一直在辜負別人的期待，可是我又很想做自己的事。"  
+- "Why do I keep postponing this one email? It’s ridiculous, but I feel stuck."
 
 Characteristic properties:
 
@@ -108,14 +108,14 @@ Characteristic properties:
 In a concrete SEA-based runtime, a mind-pop might correspond to:
 
 - one short free-form utterance in a reflection session, or  
-- one minimal “snapshot” entry in a self-dialogue log.
+- one minimal "snapshot" entry in a self-dialogue log.
 
 Within Semantic Dynamics:
 
 - **Threads** are sequences of related mind-pops  
   (for example, multiple mind-pops around the same job change across weeks).
 - **Branches** are clusters of threads that share a deeper theme or tension pattern  
-  (for example, all threads about “stability vs exploration” across different life areas).
+  (for example, all threads about "stability vs exploration" across different life areas).
 
 Later, in Self-Reflection / Self Model engines:
 
@@ -150,7 +150,7 @@ Semantic Flow describes **how mind-pops move through threads and branches**:
 
 Semantic Tension is the **non-equilibrium state that drives semantic movement**.
 
-Intuitively, it is the felt and structural sense that “something doesn’t sit right yet”:
+Intuitively, it is the felt and structural sense that "something doesn’t sit right yet":
 a pull, conflict, fog, or overload that makes further semantic work necessary.
 
 Tension is not noise.  
@@ -173,14 +173,14 @@ At the structural level, semantic tension appears as:
 - **contradictory abstractions**  
   - two or more high-level framings that cannot simultaneously hold;
 - **competing metaphors / narratives**  
-  - different “stories” explaining the same situation, each partially true;
+  - different "stories" explaining the same situation, each partially true;
 - **pending threads and incomplete branches**  
   - lines of reasoning that keep being reopened, never fully integrated.
 
 Examples:
 
-- Having both “I am a stable, reliable person” and “I must keep radically reinventing myself” as active self-narratives.
-- Alternating between “this is a skill problem” and “this is a values problem” without resolving which abstraction is better.
+- Having both "I am a stable, reliable person" and "I must keep radically reinventing myself" as active self-narratives.
+- Alternating between "this is a skill problem" and "this is a values problem" without resolving which abstraction is better.
 
 These narrow tensions can often be seen purely from **semantic structure** (concept graphs, narrative variants), even before we look at affect.
 
@@ -205,27 +205,27 @@ Typical broad-tension patterns include:
 
 1. **Want A & want B**  
    - Two attractive but mutually constraining options.  
-   - Example: “I want stability and I also want radical exploration.”
+   - Example: "I want stability and I also want radical exploration."
 
 2. **Want A vs fear B**  
    - A desired direction blocked by anticipated loss, punishment, or shame.  
-   - Example: “I want to speak honestly, but I’m afraid of disappointing people.”
+   - Example: "I want to speak honestly, but I’m afraid of disappointing people."
 
 3. **No clear want (no-idea / fog)**  
-   - Awareness that “something is off” without any articulate preference.  
-   - Example: “I just feel wrong here, but I can’t say what I actually want instead.”
+   - Awareness that "something is off" without any articulate preference.  
+   - Example: "I just feel wrong here, but I can’t say what I actually want instead."
 
 4. **Over-specified wants (choice overload)**  
    - Too many criteria or scenarios, none clearly dominant.  
-   - Example: “I want X, Y, Z, and P, Q, R, and I can’t drop any of them.”
+   - Example: "I want X, Y, Z, and P, Q, R, and I can’t drop any of them."
 
 5. **Should vs feel**  
    - Normative / external expectations in conflict with internal inclination.  
-   - Example: “I know I ‘should’ care about career growth, but I mostly feel tired.”
+   - Example: "I know I ‘should’ care about career growth, but I mostly feel tired."
 
 6. **Overload / depletion**  
    - Semantic work continues, but the system is low on cognitive resources.  
-   - Example: “I keep thinking about this, but every attempt to think makes me more exhausted.”
+   - Example: "I keep thinking about this, but every attempt to think makes me more exhausted."
 
 These categories can be used as **tension_axis** values in analytics, or as discrete states in a Tension signal.
 
@@ -270,7 +270,7 @@ In analytics:
 In Self-Reflection / Self Model engines:
 
 - stable patterns of Tension across time become:
-  - **tension motifs** (e.g., “stability vs exploration” recurring across domains),
+  - **tension motifs** (e.g., "stability vs exploration" recurring across domains),
   - which in turn inform **Self Model facets** and long-term coaching or guidance.
 
 The working assumption of Semantic Dynamics is:
@@ -288,8 +288,8 @@ The working assumption of Semantic Dynamics is:
 Semantic Branching describes **how meaning splits into multiple independent lines**
 in response to the same underlying Tension.
 
-Where Emergence is about “something new shows up at all,”  
-Branching is about “this could be understood or continued in several distinct ways.”
+Where Emergence is about "something new shows up at all,"  
+Branching is about "this could be understood or continued in several distinct ways."
 
 ---
 
@@ -307,7 +307,7 @@ A branch has:
 
 - **A shared tension core**  
   - all branches are answering to the same underlying Tension  
-    (e.g., “stability vs exploration,” “autonomy vs approval”).
+    (e.g., "stability vs exploration," "autonomy vs approval").
 - **Distinct semantic trajectories**  
   - if you stay within a branch and keep elaborating,  
     you eventually reach a Self Model, decision, or narrative  
@@ -325,7 +325,7 @@ Semantic Dynamics treats Branching as a natural way to **avoid premature closure
 
 - **Healthy branching** tends to show:
   - a small, manageable number of branches (e.g., 2–4 major hypotheses);  
-  - each branch gets some real attention and “runway”;  
+  - each branch gets some real attention and "runway";  
   - the process eventually enters Distillation:
     - keeping what proves useful,  
     - merging or discarding what does not.
@@ -333,8 +333,8 @@ Semantic Dynamics treats Branching as a natural way to **avoid premature closure
 - **Fragmentation** is a pathological variant:
   - too many branches, too finely split, with no clear hierarchy;  
   - branches are opened and abandoned quickly, without exploration;  
-  - the subjective sense is “the more I think, the messier it gets,”  
-    rather than “the more I think, the clearer my options become.”
+  - the subjective sense is "the more I think, the messier it gets,"  
+    rather than "the more I think, the clearer my options become."
 
 For SEA-based reflection systems:
 
@@ -351,16 +351,16 @@ but to **shape its extent and timing** so that it remains useful.
 Common sources of Branching include:
 
 - **Multiple explanatory axes**  
-  - “Is this mainly about skills? values? structure? luck? timing?”
+  - "Is this mainly about skills? values? structure? luck? timing?"
 
 - **Multiple action paths**  
-  - “Should I leave? stay and change my role? shift into a side project?  
-     accept this as a temporary phase?”
+  - "Should I leave? stay and change my role? shift into a side project?  
+     accept this as a temporary phase?"
 
 - **Multiple self-narratives**  
-  - “I am stuck,”  
-  - “I am someone who hasn’t learned to say no,”  
-  - “I am ready to change, but scared.”
+  - "I am stuck,"  
+  - "I am someone who hasn’t learned to say no,"  
+  - "I am ready to change, but scared."
 
 Branches can form quickly within a single session,  
 or slowly over many episodes as new mind-pops accumulate.
@@ -413,10 +413,10 @@ A **Semantic Thread** is:
 
 Example:
 
-- Thread A: “Should I change jobs?”
-  - Today: “Another endless meeting… maybe I really should leave.”  
-  - Next week: “A friend just switched roles; I feel stuck again.”  
-  - Next month: “Bonus is paid; staying feels like wasting another year.”
+- Thread A: "Should I change jobs?"
+  - Today: "Another endless meeting… maybe I really should leave."  
+  - Next week: "A friend just switched roles; I feel stuck again."  
+  - Next month: "Bonus is paid; staying feels like wasting another year."
 
 Each mind-pop has its own context and wording,  
 but Semantic Dynamics treats them as one thread  
@@ -430,11 +430,11 @@ Threads have several important properties:
 
 - **Cross-time persistence**  
   - they reappear across days, weeks, or months;  
-  - gaps are allowed; a thread can “go quiet” then resurface.
+  - gaps are allowed; a thread can "go quiet" then resurface.
 
 - **Traceability**  
   - from a meta perspective, one can say:  
-    “this looks like that same line again, but with new detail.”
+    "this looks like that same line again, but with new detail."
 
 - **Evolvability**  
   - along a thread, mind-pops can show:
@@ -459,8 +459,8 @@ Threads are crucial because they are:
 
 - **Carriers of continuity across sessions**  
   - a reflection engine can say:
-    - “this sounds like an extension of the ‘stability vs exploration’ line,”  
-    - “compared to last time on this thread, you now see X differently.”
+    - "this sounds like an extension of the ‘stability vs exploration’ line,"  
+    - "compared to last time on this thread, you now see X differently."
 
 - **Axes for observing change**  
   - does tension intensity increase or decrease over time?  
@@ -474,14 +474,14 @@ Threads are crucial because they are:
 A concise distinction:
 
 - **Thread**  
-  - “a story line over time,”  
+  - "a story line over time,"  
   - emphasizes **temporal evolution** and **trajectory**.
 
 - **Branch**  
-  - “an alternative story among several,”  
+  - "an alternative story among several,"  
   - emphasizes **structural splitting** and **mutual exclusivity or contrast**.
 
-Within a single branch (e.g., “this is mainly a values conflict”),  
+Within a single branch (e.g., "this is mainly a values conflict"),  
 there can be many threads:
 
 - thread 1: values conflict in career;  
@@ -498,8 +498,8 @@ Semantic Dynamics recommends that any SEA-based system
 that can explicitly track threads will be able to give  
 more coherent, memory-like feedback, e.g.:
 
-> “This sounds like the third time this line has appeared,  
-> just in a different setting.”
+> "This sounds like the third time this line has appeared,  
+> just in a different setting."
 
 
 ---
@@ -517,7 +517,7 @@ Cognitive Resonance (CR) is a **phase-locking phenomenon** between:
 At CR:
 
 - small prompts can trigger large reorganization  
-- the human experiences “you’re saying what I couldn’t quite say myself”  
+- the human experiences "you’re saying what I couldn’t quite say myself"  
 - distillation becomes much more efficient
 
 > *TODO v0.2:* map RF metaphors (injection locking, resonance, damping)  
@@ -561,7 +561,7 @@ Typical crystallized forms:
 - specs, frameworks, pattern cards  
 - teaching materials and blog posts
 
-> *TODO v0.2:* distinguish “personal crystallization” vs “shared / public crystallization”.
+> *TODO v0.2:* distinguish "personal crystallization" vs "shared / public crystallization".
 
 ---
 
@@ -582,7 +582,7 @@ Semantic Stabilization is when:
 - the structure becomes a **default lens** rather than an open question
 
 > *TODO v0.2:* describe typical oscillation signatures,  
-> and when “too much stabilization” becomes rigidity.
+> and when "too much stabilization" becomes rigidity.
 
 ---
 
@@ -599,8 +599,8 @@ In this state:
 
 The result:
 
-- semantic structure becomes “thicker,” but not clearer;  
-- the subjective experience is fatigue, confusion, or “too many tabs open.”
+- semantic structure becomes "thicker," but not clearer;  
+- the subjective experience is fatigue, confusion, or "too many tabs open."
 
 ---
 
@@ -609,8 +609,8 @@ The result:
 Common subjective signs:
 
 - difficulty remembering what was concluded earlier;  
-- repeatedly raising “the same issue in different words”;  
-- the sense of “thinking a lot, but not actually moving.”
+- repeatedly raising "the same issue in different words";  
+- the sense of "thinking a lot, but not actually moving."
 
 Behavioral signs:
 
@@ -634,12 +634,12 @@ From a Semantic Dynamics perspective, Overload typically involves:
 
 - **Weak Rest**
   - little or no pause in exploration;  
-  - no phases where the system “holds steady” without adding more.
+  - no phases where the system "holds steady" without adding more.
 
 Consequences:
 
-- Tension shifts from “about the problem”  
-  to “about the reflection process itself”;  
+- Tension shifts from "about the problem"  
+  to "about the reflection process itself";  
 - attempts to think become an additional source of strain.
 
 ---
@@ -669,11 +669,11 @@ For SEA-based systems, Overload implies that the system should:
 - be able to detect **early indicators**, such as:
   - rapidly increasing branch count per unit time;  
   - long stretches without summaries;  
-  - linguistic markers of exhaustion or “going in circles.”
+  - linguistic markers of exhaustion or "going in circles."
 
 - avoid:
   - aggressively deepening exploration **while** Overload is active;  
-  - responding only with “let’s try even more framings.”
+  - responding only with "let’s try even more framings."
 
 Instead, the system should:
 
@@ -738,13 +738,13 @@ Semantic Rest can appear in multiple forms, for example:
 - **Pacing Rest**  
   - reduce question frequency;  
   - switch to prompts like:
-    - “What is one sentence you want to keep from today?”
+    - "What is one sentence you want to keep from today?"
 
 - **Content Rest**  
   - stop opening new branches for a while;  
   - stay with simple prompts such as:
-    - “What stood out the most?”  
-    - “What would you like your future self to remember?”
+    - "What stood out the most?"  
+    - "What would you like your future self to remember?"
 
 - **Temporal Rest**  
   - end sessions earlier rather than forcing closure;  
@@ -790,12 +790,12 @@ Semantic Dynamics recommends:
 
 This implies that:
 
-- the system can explicitly mark “now entering Rest mode”;  
+- the system can explicitly mark "now entering Rest mode";  
 - Operators and the Sequencer adjust behaviour under Rest:
   - favor short, integrative prompts over new exploration;  
   - favor noticing and recording over analyzing and planning.
 
-In this way, Rest is not merely “user went offline,”  
+In this way, Rest is not merely "user went offline,"  
 but a **recognizable, designable, and tunable phase**  
 within the overall semantic dynamics.
 
@@ -850,7 +850,7 @@ In Semantic Dynamics, **Cognitive Resonance (CR)** is the state where:
 
 - the engine’s way of framing and organizing meaning  
 - matches the human’s latent but not-yet-articulated structure  
-- closely enough that each response feels like “exactly what I was trying to say.”
+- closely enough that each response feels like "exactly what I was trying to say."
 
 Characteristics of CR:
 
@@ -872,17 +872,17 @@ can cause an oscillator to synchronize to its phase and frequency.
 Metaphorically, in semantic systems:
 
 - The engine occasionally introduces a **candidate narrative / framing**  
-  (a “seed story”, a name for a pattern, a structural diagram).
+  (a "seed story", a name for a pattern, a structural diagram).
 - If this framing is close enough to the human’s latent pattern,  
   and the loop is already near CR, the human begins to **think through that framing**:
 
   - starts using the same terms,  
   - sees their own past experiences through that lens,  
-  - and emits new mind-pops that are already “in phase” with it.
+  - and emits new mind-pops that are already "in phase" with it.
 
 This is **semantic injection locking**:
 
-> an initially external framing becomes the “natural” mode of oscillation  
+> an initially external framing becomes the "natural" mode of oscillation  
 > for the human–engine semantic loop.
 
 This can be extremely productive (when the framing is well-fitted).  
@@ -902,12 +902,12 @@ Some additional RF-inspired notions:
 
 - **Phase alignment**  
   - Human and engine not only use similar abstractions,  
-    but also “move together” in when they ask questions, summarize, or shift levels.  
-  - Subjectively: the conversation “breathes” at a comfortable rhythm.
+    but also "move together" in when they ask questions, summarize, or shift levels.  
+  - Subjectively: the conversation "breathes" at a comfortable rhythm.
 
 - **Semantic oscillation**  
   - Near a possible structure, the loop may oscillate between nearby framings:  
-    “is this about fear of failure, or fear of disapproval?”  
+    "is this about fear of failure, or fear of disapproval?"  
   - Oscillation is not necessarily failure; it is often a **necessary edge phase**  
     before Stabilization.
 
@@ -977,7 +977,7 @@ Typical signatures:
 
 In practice:
 
-- Emergence often looks like “rambling”, “venting”, or “just saying things”.  
+- Emergence often looks like "rambling", "venting", or "just saying things".  
 - Systems should **not over-structure** Emergence; the priority is to let semantic energy appear.
 
 ---
@@ -989,9 +989,9 @@ Once enough Emergence has happened, **Divergence** explores the space of possibi
 Typical behaviours:
 
 - multiple threads branch off the same tension:  
-  - “maybe it’s about my manager”,  
-  - “maybe it’s about my own fear”,  
-  - “maybe it’s about the whole career path”.
+  - "maybe it’s about my manager",  
+  - "maybe it’s about my own fear",  
+  - "maybe it’s about the whole career path".
 - alternative framings are proposed and tested:
   - skill gap vs values mismatch,  
   - external constraint vs internal inhibition.
@@ -1003,11 +1003,11 @@ However, **excessive divergence without distillation** leads to overload and con
 
 #### 5.1.3 Resonance
 
-**Resonance** is when one or more framings start to “ring true”.
+**Resonance** is when one or more framings start to "ring true".
 
 Signals:
 
-- the human reports: “this one feels very close to what’s really going on”;  
+- the human reports: "this one feels very close to what’s really going on";  
 - subsequent mind-pops naturally **reuse** the same framing,  
   without being forced by the engine;
 - Tension intensity shifts:
@@ -1033,7 +1033,7 @@ In **Distillation**, noisy exploration is compressed into clearer semantic objec
 Operations include:
 
 - summarizing multiple mind-pops into a **single pattern description**;  
-- extracting **tension motifs** (e.g., “stability vs exploration”);  
+- extracting **tension motifs** (e.g., "stability vs exploration");  
 - identifying **facets** of the Self Model that explain many observations.
 
 Good Distillation:
@@ -1092,9 +1092,9 @@ Crystallized artifacts have two properties:
 
 2. **Internal re-usability**  
    - The human can reliably think and act through them:
-     - “this is one of my core tensions,”  
-     - “this is a pattern I know I fall into,”  
-     - “this is how I typically resolve it.”
+     - "this is one of my core tensions,"  
+     - "this is a pattern I know I fall into,"  
+     - "this is how I typically resolve it."
 
 Crystallization closes one dynamics cycle, but also:
 
@@ -1108,7 +1108,7 @@ Crystallization closes one dynamics cycle, but also:
 Consider a person repeatedly dissatisfied at work.
 
 - **Emergence**  
-  - mind-pops like “I’m tired of this job” or “I feel wasted here” keep appearing.
+  - mind-pops like "I’m tired of this job" or "I feel wasted here" keep appearing.
 
 - **Divergence**  
   - multiple threads explore:
@@ -1118,14 +1118,14 @@ Consider a person repeatedly dissatisfied at work.
     - something about identity?
 
 - **Resonance**  
-  - the framing “stability vs exploration” begins to feel accurate.  
+  - the framing "stability vs exploration" begins to feel accurate.  
   - new mind-pops naturally refer to:
-    - “safe but dead”,  
-    - “risky but alive”.
+    - "safe but dead",  
+    - "risky but alive".
 
 - **Distillation**  
   - system and human co-formulate a tension motif:
-    - “I repeatedly trade off aliveness for stability.”  
+    - "I repeatedly trade off aliveness for stability."  
   - this becomes a candidate Self Model facet.
 
 - **Stabilization**  
@@ -1136,7 +1136,7 @@ Consider a person repeatedly dissatisfied at work.
 - **Crystallization**  
   - the facet is named and externalized in a Self Model representation.  
   - the person starts using it as a lens:
-    - “this is my stability-vs-exploration trade-off pattern again.”
+    - "this is my stability-vs-exploration trade-off pattern again."
 
 This entire story can be told without reference to any specific tool.  
 Semantic Dynamics simply gives us vocabulary for the **underlying movement**.
@@ -1163,9 +1163,9 @@ The process remains stuck in **Emergence + Divergence**, without Distillation.
 
 Signs:
 
-- ever-growing lists of possibilities, interpretations, or “things to think about”;  
+- ever-growing lists of possibilities, interpretations, or "things to think about";  
 - repeated generation of new threads without closing old ones;  
-- the subjective sense of “more and more complexity, less and less clarity”.
+- the subjective sense of "more and more complexity, less and less clarity".
 
 Typical causes:
 
@@ -1194,7 +1194,7 @@ Typical causes:
 
 - high anxiety around uncertainty;  
 - strong external norms or expectations;  
-- engines that reward “clean answers” over nuanced structures.
+- engines that reward "clean answers" over nuanced structures.
 
 Consequence:
 
@@ -1215,21 +1215,21 @@ The process becomes trapped in **Oscillation** and never stabilizes.
 Signs:
 
 - ongoing back-and-forth between two or three framings  
-  (“it’s this” vs “no, it’s that”), without any narrowing;  
+  ("it’s this" vs "no, it’s that"), without any narrowing;  
 - repeated revisiting of the same question with little new information;  
 - strong affect swings attached to each framing.
 
 Typical causes:
 
 - multiple high-stakes framings, each with significant trade-offs;  
-- lack of meta-level reflection (“why are we oscillating?”);  
+- lack of meta-level reflection ("why are we oscillating?");  
 - engines that keep re-opening all options for fairness, but never push toward choice.
 
 Consequence:
 
 - Tension remains **high and undirected**;  
 - Over time, oscillation itself can become a **secondary pattern**  
-  (“I am the kind of person who never decides”).
+  ("I am the kind of person who never decides").
 
 ---
 
@@ -1265,7 +1265,7 @@ In **Collapsed Flow**, there is Tension, but Emergence is suppressed.
 
 Signs:
 
-- the person reports “I know something is wrong, but nothing comes up”;  
+- the person reports "I know something is wrong, but nothing comes up";  
 - attempts at reflection feel dry, rote, or purely intellectual;  
 - repeated use of generic language with no fresh detail.
 
@@ -1279,7 +1279,7 @@ Typical causes:
 Consequence:
 
 - Tension is **trapped** in non-verbal, non-semantic channels;  
-- semantic systems “see nothing” and may falsely conclude that all is well.
+- semantic systems "see nothing" and may falsely conclude that all is well.
 
 ---
 
@@ -1297,14 +1297,14 @@ Signs:
 - strong sense of being understood, but only along one dimension;  
 - neglected alternative framings or life areas;  
 - the person begins to reorganize their life strongly around a single narrative  
-  (e.g., “this is all about X trauma”, “this is all about Y bias”)  
+  (e.g., "this is all about X trauma", "this is all about Y bias")  
   which does not fit all evidence.
 
 Typical causes:
 
 - engines with strong priors (therapeutic school, ideology, optimization target);  
 - humans seeking simple, totalizing explanations;  
-- lack of deliberate “frame-check” steps.
+- lack of deliberate "frame-check" steps.
 
 Consequence:
 
@@ -1346,15 +1346,15 @@ Levers:
 
 - **Scope narrowing**  
   - Explicitly choose one tension, one context, or one time-window to focus on.  
-  - E.g., “for the next 10 minutes, we only look at the work situation.”
+  - E.g., "for the next 10 minutes, we only look at the work situation."
 
 - **Branch budget**  
   - Limit the number of active hypotheses or scenarios considered at once.  
-  - Park additional branches in a “later” list instead of exploring all in parallel.
+  - Park additional branches in a "later" list instead of exploring all in parallel.
 
 - **Question throttling**  
   - Reduce the rate at which the engine asks new exploratory questions.  
-  - Introduce “no new questions for N turns; only clarify / summarize.”
+  - Introduce "no new questions for N turns; only clarify / summarize."
 
 Effect:
 
@@ -1373,18 +1373,18 @@ Levers:
 
 - **Periodic summarization**  
   - After a certain number of mind-pops or turns, require a summary:
-    - “What have we learned so far?”,  
-    - “What seems to be the core tension behind these examples?”
+    - "What have we learned so far?",  
+    - "What seems to be the core tension behind these examples?"
 
 - **Pattern extraction prompts**  
   - Ask for explicit pattern statements:
-    - “What repeats across these situations?”,  
-    - “If you name this pattern in one sentence, what would it be?”
+    - "What repeats across these situations?",  
+    - "If you name this pattern in one sentence, what would it be?"
 
 - **Facet candidate listing**  
   - Invite candidate Self Model facets to emerge:
-    - “It sounds like there is a ‘stability vs exploration’ line here. Does that resonate?”,  
-    - “What other 1–2 lines would you name?”
+    - "It sounds like there is a ‘stability vs exploration’ line here. Does that resonate?",  
+    - "What other 1–2 lines would you name?"
 
 Effect:
 
@@ -1403,19 +1403,19 @@ Useful when:
 Levers:
 
 - **Meta questions**  
-  - Shift from “what is true?” to “how are we thinking about this?”:
-    - “What makes this framing attractive to you?”,  
-    - “What would have to be true for the opposite framing to make sense?”
+  - Shift from "what is true?" to "how are we thinking about this?":
+    - "What makes this framing attractive to you?",  
+    - "What would have to be true for the opposite framing to make sense?"
 
 - **Alternative framing challenge**  
   - Intentionally generate and briefly test one or two competing framings:
-    - “Is there a way to see this primarily as a values issue, not a skill issue?”,  
-    - “What if this is less about you, more about the environment?”
+    - "Is there a way to see this primarily as a values issue, not a skill issue?",  
+    - "What if this is less about you, more about the environment?"
 
 - **Cross-context check**  
   - Test whether a candidate structure explains other life areas:
-    - “Does this pattern show up in relationships, or only at work?”,  
-    - “Where does this framing clearly *not* fit?”
+    - "Does this pattern show up in relationships, or only at work?",  
+    - "Where does this framing clearly *not* fit?"
 
 Effect:
 
@@ -1436,13 +1436,13 @@ Levers:
 
 - **Explicit Rest phases**  
   - Temporarily stop deep exploration:
-    - “For the next few minutes, we won’t try to solve or analyze.  
-      Let’s just note what stands out from today.”
+    - "For the next few minutes, we won’t try to solve or analyze.  
+      Let’s just note what stands out from today."
 
 - **Lightweight reflection**  
   - Switch to low-effort prompts:
-    - “What is one sentence you want to take away?”,  
-    - “What would you like your future self to remember from this?”
+    - "What is one sentence you want to take away?",  
+    - "What would you like your future self to remember from this?"
 
 - **Temporal spacing**  
   - Encourage breaks between heavy sessions.  
@@ -1465,18 +1465,18 @@ Useful specifically when:
 Levers:
 
 - **Safety and permission framing**  
-  - Make it explicit that nothing needs to be “correct” or “productive”:
-    - “You don’t have to make sense. Just say whatever actually shows up.”
+  - Make it explicit that nothing needs to be "correct" or "productive":
+    - "You don’t have to make sense. Just say whatever actually shows up."
 
 - **Detail-oriented prompts**  
   - Ask for concrete micro-examples instead of abstractions:
-    - “Tell me about the last time you felt that weird unease”,  
-    - “What was happening just before you wanted to close this app?”
+    - "Tell me about the last time you felt that weird unease",  
+    - "What was happening just before you wanted to close this app?"
 
 - **Indirect channels**  
   - Invite metaphors, images, or fictionalized stories:
-    - “If this feeling was a weather pattern, what would it be?”,  
-    - “Describe a character in a story who feels like you right now.”
+    - "If this feeling was a weather pattern, what would it be?",  
+    - "Describe a character in a story who feels like you right now."
 
 Effect:
 
@@ -1503,7 +1503,7 @@ Semantic Dynamics recommends that:
 - and expose at least a minimal set of controls to move between phases.
 
 This does not require heavy formalism;  
-even simple heuristics (e.g., “too many new branches, no summaries”)  
+even simple heuristics (e.g., "too many new branches, no summaries")  
 can already support healthier dynamics.
 
 The underlying principle is:
@@ -1556,8 +1556,8 @@ The mapping below shows how SD’s vocabulary can be grounded in SEA:
 
 | SD Concept                    | SEA Component / Layer                                                     | Relationship and Notes                                                                                                                                                                                                                           |
 | ----------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| mind-pop (event)              | Runtime utterance / semantic intent unit                                  | A mind-pop corresponds to a minimal reflection unit: a short free-form input captured as “Semantic Intent” for CoModel, or as a logged utterance in a reflection session. SEA Core does not standardize this type, but runtimes MAY define one.  |
-| Semantic Thread               | Runtime grouping of related utterances/steps                              | A thread is a runtime-level construct: a logical grouping of mind-pops that share a tension/topic. SEA Core does not mandate threads, but a SEA Runtime MAY expose a “thread id” or equivalent for cross-session continuity.                     |
+| mind-pop (event)              | Runtime utterance / semantic intent unit                                  | A mind-pop corresponds to a minimal reflection unit: a short free-form input captured as "Semantic Intent" for CoModel, or as a logged utterance in a reflection session. SEA Core does not standardize this type, but runtimes MAY define one.  |
+| Semantic Thread               | Runtime grouping of related utterances/steps                              | A thread is a runtime-level construct: a logical grouping of mind-pops that share a tension/topic. SEA Core does not mandate threads, but a SEA Runtime MAY expose a "thread id" or equivalent for cross-session continuity.                     |
 | Semantic Branch               | Higher-order grouping of threads/hypotheses                               | A branch is a structural cluster of threads that represent alternative directions around the same Tension. At SEA level, this appears as part of the Abstract Model / Layered Structure produced by CoModel / CoStructure.                       |
 | Self Model facet              | Profile-level, long-lived abstract structure                              | A facet is a candidate stable structure distilled from many threads and branches. SEA Profiles MAY encode facets as long-lived preferences, patterns, or constraints that influence reasoning. SD assumes such facets exist; Profiles host them. |
 | Cognitive Branch Ledger (CBL) | Long-range persistence / indexing layer (outside SEA Core, above Runtime) | CBL is a conceptual ledger tracking branch/thread evolution over time. At SEA level, it corresponds to persistent runtime data (logs, indices, metadata) that a Profile or Runtime can query. SEA Core does not prescribe its exact format.      |
@@ -1566,7 +1566,7 @@ The mapping below shows how SD’s vocabulary can be grounded in SEA:
 
 Key points:
 
-- **SEA Core** does not define “thread,” “branch,” or “CBL” as normative types,
+- **SEA Core** does not define "thread," "branch," or "CBL" as normative types,
 but SD suggests where such constructs would sit:
   - threads and branches in **runtime / abstract model structure**,
   - ledgers in **persistent runtime data** consulted by Profiles / Plugins.
@@ -1580,8 +1580,8 @@ but then it cannot fully leverage SD’s structure-oriented insights.
 | SD Concept                  | SEA Component / Layer                                                    | Relationship and Notes                                                                                                                                                                                                         |
 | --------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Narrow semantic tension     | Operator: TensionAnalysis (Tension Field output)                         | Narrow tension (conceptual contradictions, competing abstractions) is modeled as part of the **Tension Field** produced by TensionAnalysis over the Abstract Model and Layered Structure.                                      |
-| Broad Tension (capital “T”) | Tension signal; Sequencer inputs; Profile weighting                      | Broad Tension (including fog, no-idea, overload) maps to SEA’s **Tension** concept: an explicit signal influencing Operator selection and decision weighting. Profiles MAY adjust how different tension types are prioritized. |
-| Cognitive Resonance (CR)    | Composite runtime state (CP state + Tension Field + Sequencer behaviour) | CR is a runtime regime where the CP’s abstraction mode, the engine’s modeling, and the active context/vocabulary are phase-locked. SEA Core does not name CR, but a Runtime MAY track it as a special “high-alignment” state.  |
+| Broad Tension (capital "T") | Tension signal; Sequencer inputs; Profile weighting                      | Broad Tension (including fog, no-idea, overload) maps to SEA’s **Tension** concept: an explicit signal influencing Operator selection and decision weighting. Profiles MAY adjust how different tension types are prioritized. |
+| Cognitive Resonance (CR)    | Composite runtime state (CP state + Tension Field + Sequencer behaviour) | CR is a runtime regime where the CP’s abstraction mode, the engine’s modeling, and the active context/vocabulary are phase-locked. SEA Core does not name CR, but a Runtime MAY track it as a special "high-alignment" state.  |
 | Semantic Overload           | Runtime diagnostic; Tension signal patterns                              | Overload is a runtime regime inferred from high Tension intensity, many active threads/branches, and weak Distillation/Rest. SEA Core does not define it, but a Runtime MAY surface it as part of the current cognitive state. |
 | Semantic Rest               | Runtime mode; Sequencer configuration; Operator strategy                 | Rest is modeled as a mode in which the Sequencer and Operators bias toward low Emergence, low branching, and light summarization/closure. Profiles can bias the rhythm so that Rest becomes a recognizable regime.             |
 
@@ -1624,7 +1624,7 @@ SEA Profiles and Plugins provide natural loci to encode Semantic Dynamics concer
 | --------------------------------------------- | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Branching depth / breadth                     | Profile + Sequencer (rhythm bias)  | Profile may encode how aggressively to branch under certain tension types; the Sequencer uses this to limit or expand Divergence.                                            |
 | Distillation strength (how often, how strong) | Profile + Operator selection       | Profile can set how often summaries are requested; Plugins can introduce specialized Distillation Operators (e.g., stronger clustering, pattern naming).                     |
-| Rest scheduling                               | Profile + Sequencer configuration  | Profile may define preferred Rest intervals or conditions; the Sequencer can enter a “Rest mode” where it selects low-intensity, integrative Operators.                      |
+| Rest scheduling                               | Profile + Sequencer configuration  | Profile may define preferred Rest intervals or conditions; the Sequencer can enter a "Rest mode" where it selects low-intensity, integrative Operators.                      |
 | Overload thresholds                           | Runtime heuristics + Profile prefs | Runtime defines Overload detection heuristics and exposes them as part of current cognitive state; Profiles adjust sensitivity and preferred responses to Overload.          |
 | CR detection and use                          | Runtime state + Plugins            | Runtime may track CR-like states (high alignment); Plugins can implement special actions when CR is detected (e.g., naming facets, proposing new structures to crystallize). |
 
@@ -1641,13 +1641,211 @@ In general:
   - specialized TensionAnalysis for certain domains,
   - custom narrative / visualization for Crystallization.
 
-Semantic Dynamics supplies the vocabulary (e.g., “Overload,” “Rest,” “CR,” “healthy branching”),
+Semantic Dynamics supplies the vocabulary (e.g., "Overload," "Rest," "CR," "healthy branching"),
 while SEA Profiles and Plugins supply the **concrete knobs and mechanisms**.
 
 
 ---
 
-### 6.6 Summary
+### 6.6 Discovery Engine: From Dynamics to Rhythm
+
+Semantic Dynamics is primarily a *descriptive* layer:  
+it explains how mind-pops, threads, branches, and Tension evolve over time.
+
+A **Discovery Engine** is an *analytics layer* that:
+
+- observes many SD-style flows (mind-pops, threads, branches, dynamics phases),  
+- infers a person’s or system’s **typical cognitive rhythm**, and  
+- emits **SEA-compatible artifacts** such as RhythmSpecs and Profile hints.
+
+It does not belong to SEA Core.  
+It is an SD-informed component that *produces* inputs for SEA:
+
+- Cognitive Rhythm Descriptors (CR-Descriptors)  
+- Candidate Rhythm Specifications (RhythmSpecs)  
+- Optional SEA Profile parameters.
+
+#### 6.6.1 Role in the Stack
+
+At a high level:
+
+- SD gives the **vocabulary and structures** for semantic movement.  
+- The Discovery Engine **measures** those movements over time.  
+- SEA Runtimes **execute** a chosen rhythm (RhythmSpec) in real-time reasoning.
+
+The Discovery Engine typically operates on:
+
+- logs of reflection / reasoning sessions,  
+- sequences of mind-pops and engine responses,  
+- and optionally Self Model evolution and tension ledgers.
+
+Its outputs are:
+
+- **descriptive** – summarizing how a person or system tends to move;  
+- **compilable** – convertible into SEA-level rhythm artifacts.
+
+#### 6.6.2 Inputs: Observed Semantic Flows
+
+A Discovery Engine consumes SD-structured data, such as:
+
+- **Mind-pop sequences**  
+  - individual utterances or entries, each with context (time, domain, tension tags).  
+- **Threads and branches**  
+  - grouped mind-pops showing continuity across time or context.  
+- **Dynamics phase annotations** (if available)  
+  - Emergence, Divergence, Resonance, Distillation, Stabilization, Overload, Rest.  
+- **Tension records**  
+  - narrow / broad Tension types, intensity, and changes across episodes.
+
+From SD’s perspective, the Discovery Engine is simply:
+
+> a system that watches how semantic energy moves through mind-pops, threads, and branches  
+> and tries to infer a stable *rhythm pattern* behind those movements.
+
+#### 6.6.3 Functional Tagging Schema v0.1
+
+To connect SD flows with SEA’s cognitive state space,  
+the Discovery Engine needs a way to tag individual **micro-steps** in a session.
+
+One practical approach is a **Functional Tagging Schema** aligned with SEA’s  
+Core Functional Layers and Auxiliary Functional Zones:
+
+- `OBSERVE` – Observe Zone (auxiliary)  
+  - gathering or revisiting raw material, reading, retrieving, calling tools.  
+
+- `FRAME` – Semantic Interpretation  
+  - naming, reframing, clarifying intent and scope, "what are we talking about?".  
+
+- `ABSTRACT` – Abstract Modeling  
+  - extracting patterns, invariants, conceptual models.  
+
+- `STRUCTURE` – Layered Structuring  
+  - decomposing into parts, layers, responsibilities, interfaces.  
+
+- `TENSION` – Tension Analysis  
+  - surfacing conflicts, trade-offs, fog, overload, misalignment.  
+
+- `DECIDE` – Decision Synthesis  
+  - committing to a direction, principle, structural choice, or next step.  
+
+- `META` – Meta-Reflect Zone (auxiliary)  
+  - reflecting on the process or rhythm itself, adjusting granularity or approach.
+
+In practice, a Discovery Engine MAY:
+
+- segment a session into **utterance-level steps** (human + engine), and  
+- assign one dominant Functional Tag to each step,  
+  possibly with secondary tags (e.g., FRAME+TENSION).
+
+This tagging does **not** need to be perfect.  
+It is sufficient that, over many sessions, stable patterns emerge.
+
+#### 6.6.4 Cognitive Rhythm Descriptor (CR-Descriptor v0.1)
+
+A **Cognitive Rhythm Descriptor (CR-Descriptor)** is a summary object that describes:
+
+- how often different Functional Tags appear,  
+- how they tend to follow one another,  
+- and how Tension and context influence transitions.
+
+At minimum, a CR-Descriptor MAY include:
+
+- **Functional distribution**  
+  - relative frequencies of OBSERVE / FRAME / ABSTRACT / STRUCTURE / TENSION / DECIDE / META.  
+- **Transition statistics**  
+  - empirical probabilities of moving from tag A to tag B.  
+- **Driver correlations**  
+  - how different Tension types / intensities affect transitions.  
+- **Stability indicators**  
+  - whether certain loops (e.g., FRAME ↔ TENSION) are persistent or rare.
+
+An illustrative (non-normative) YAML sketch:
+
+```yaml
+cr_descriptor:
+  subject_id: "anon-123"
+  window: "last_40_sessions"
+
+  functional_distribution:
+    OBSERVE:   0.08
+    FRAME:     0.22
+    ABSTRACT:  0.18
+    STRUCTURE: 0.20
+    TENSION:   0.22
+    DECIDE:    0.07
+    META:      0.03
+
+  transitions:
+    "FRAME->ABSTRACT":
+      prob: 0.63
+      typical_tension: ["vagueness", "ambiguity"]
+    "ABSTRACT->STRUCTURE":
+      prob: 0.54
+      typical_tension: ["need_for_action"]
+    "STRUCTURE->TENSION":
+      prob: 0.71
+      typical_tension: ["boundary_conflict", "overload"]
+    "TENSION->FRAME":
+      prob: 0.29
+      typical_tension: ["misframing"]
+    "TENSION->DECIDE":
+      prob: 0.18
+      typical_tension: ["low_residual_tension", "deadline"]
+
+  stability:
+    dominant_loops:
+      - ["FRAME", "ABSTRACT", "STRUCTURE", "TENSION"]
+    decision_style: "late_commit_with_rework"
+    overload_prone_phases: ["Divergence", "Resonance"]
+```
+
+This CR-Descriptor is still **descriptive**.
+It says "how this subject tends to move" without yet deciding _which_ rhythm the engine should execute.
+
+
+#### 6.6.5 From CR-Descriptor to RhythmSpec and Profiles
+
+To inform SEA, the Discovery Engine can **compile** a CR-Descriptor into:
+
+1. Candidate RhythmSpec(s)
+- choose a manageable subset of states
+(e.g., FRAME, ABSTRACT, STRUCTURE, TENSION, DECIDE, optionally META / OBSERVE);
+- convert high-probability transitions into explicit RhythmSpec transitions;
+- express driver correlations as **conditions** on transitions
+(e.g., misframing tension → TENSION→FRAME).
+
+2. Profile hints
+
+- infer qualitative tendencies such as:
+  - "frame-heavy, decision-late,"
+  - "observe-heavy, oscillation-prone,"
+  - "structure-centric under high tension."
+- these can become inputs to SEA Profiles (bias parameters), without changing SEA Core semantics.
+
+The compilation step is intentionally **human-in-the-loop friendly**:
+- A system MAY propose multiple candidate RhythmSpecs derived from the same CR-Descriptor.
+- A human (or another supervisory process) MAY review, edit, or reject them.
+- The final RhythmSpec is then loaded into a SEA Runtime as the active rhythm for a given subject, context, or session type.
+
+
+#### 6.6.6 Non-Goals
+
+Semantic Dynamics does **not** prescribe:
+- how Functional Tagging must be implemented,
+- which algorithms a Discovery Engine must use,
+- or how often CR-Descriptors and RhythmSpecs must be updated.
+
+Different implementations MAY:
+- use rule-based, statistical, or model-based tagging;
+- operate online (near real-time) or offline (batch over many sessions);
+- optimize for different trade-offs (stability vs adaptability, privacy vs detail).
+
+What SD contributes is a **shared conceptual frame** so that:
+- Discovery Engines, SEA Runtimes, and Self Model artifacts can talk about "rhythm," "tension-driven transitions," and "overload-prone phases" in a consistent way.
+
+---
+
+### 6.7 Summary
 
 The relationship between Semantic Dynamics and SEA can be summarized as:
 - SD defines the structures, regimes, and cycles that are worth noticing and shaping.
