@@ -1,61 +1,66 @@
-# Semantic Dynamics – Draft 0.3
-### *The Semantic Physics Layer for SEA-based Reflection Systems*
+# Semantic Dynamics – Draft 0.4
+
+## 1. Purpose & Scope
+
+This document describes a theory of **semantic dynamics** in human thinking and self-reflection.
+
+It focuses on how:
+- semantic material *emerges* in experience (as small, tension-laden "mind-pops"),
+- these pieces of meaning *move and interact over time* (forming threads, branches, and larger patterns),
+- and how this movement can eventually *stabilize* into more persistent structures we call **Self Models** or other stable cognitive artifacts.
+
+The document is intentionally **architecture-agnostic**:
+
+- It does **not** assume any particular software framework, runtime, or protocol.
+- It does **not** prescribe how a "semantic engine" must be implemented.
+- Instead, it offers a set of **concepts, patterns, and typical dynamics** that any implementation may choose to observe, record, or leverage.
+
+Whenever we use terms such as *engine*, *runtime*, *system*, or *discovery mechanism*, they are meant as **generic placeholders**:
+they refer to any technical or organizational system that wants to:
+- record semantic events in human thinking,
+- support self-reflection over time,
+- and help stabilize fluid, lived experience into more durable Self Models or other explicit structures.
+
+All references to specific architectures, names, or implementations are out of scope for this document and should live in separate, implementation-specific notes (for example, "Semantic Dynamics – Implementation Notes for X").
 
 ---
 
-## 1. Purpose
+## 2. Position of this Theory in a Larger Stack
 
-Semantic Dynamics (SD) describes **how meaning evolves over time** in systems built on the Semantic Engine Architecture (SEA).
+This document sits at the **theoretical layer** of a larger stack.
 
-It is not a specification, but a **theory layer** – a kind of *semantic physics* – that explains:
+A useful way to visualize this is in four conceptual layers:
 
-- how semantic energy arises from inner self-talk and interaction  
-- how it diverges into multiple possibilities and threads  
-- how human–engine interaction can enter resonance  
-- how structures distill, stabilize, and sometimes overload  
-- how stable Self Model facets eventually crystallize out of many episodes  
+1. **Layer-0: Semantic Dynamics (this document)**  
+   - A phenomenological and structural theory of how meaning emerges, flows, branches, stabilizes, and sometimes overloads
+     in human thinking and self-reflection.
+   - It defines concepts like *mind-pop*, *tension*, *thread*, *branch*, *resonance*, *distillation*, *crystallization*, *overload*, and *rest*.
 
-SD is intended to be:
+2. **Layer-1: Cognitive Engines & Protocols (architecture-agnostic)**  
+   - Any technical or organizational system that decides to instrument or support these dynamics.
+   - For example: conversational agents, journaling tools, coaching workflows, reflection assistants, or analytic backends that explicitly track and respond to semantic dynamics.
+   - This layer defines things like: "What counts as an event?", "How do we store it?", "What interfaces are exposed to the user?".
 
-- **Implementation-agnostic** – it does not assume any specific product or stack.  
-- **SEA-aligned** – it provides the conceptual grounding for SEA’s notion of  
-  Cognitive Persona, Tension signals, Operators, and reflection engines.  
-- **Self-Model-aware** – it explains how repeated reflection episodes can give rise  
-  to longer-term identity structure (Self Models).
+3. **Layer-2: Self-Modeling Workflows and Practices**  
+   - Concrete processes where a person (optionally assisted by tools) repeatedly returns to their own material, allowing Self Models and other stable patterns to emerge.
+   - Includes session formats, prompts, protocols, or coaching structures that operationalize the theory in lived practice.
 
----
+4. **Layer-3: Stable Semantic Artifacts**  
+   - The relatively stable results of many cycles of dynamics:
+     - Self Models and their facets,
+     - long-lived narratives,
+     - pattern libraries,
+     - frameworks, specifications, or other explicit representations.
 
-## 2. Position within SEA and Related Layers
+In other words:
 
-Semantic Dynamics (SD) is the **semantic physics layer** underneath the Semantic Engine Architecture (SEA) and any reflection / reasoning systems built on top of it.
+- **Layer-0** says: *"Here is how meaning tends to move and stabilize."*
+- **Layer-1** says: *"Here is how we might build systems that observe and interact with that movement."*
+- **Layer-2** says: *"Here is how people and systems might work together over time to shape Self Models."*
+- **Layer-3** says: *"Here are the crystallized structures that remain and can be reused."*
 
-It explains **how meaning tends to move and reorganize** across different time scales:
-
-- **Within a single reasoning episode**  
-  how threads emerge, diverge, resonate, and collapse.
-- **Across multiple episodes / sessions**  
-  how unfinished tensions and partial structures re-appear, continue, and combine.
-- **Across long-range identity**  
-  how stable facets of a Self Model slowly crystallize out of many episodes.
-
-For clarity we can think of the stack as:
-
-- **Layer-0 – Semantic Dynamics (this document)**  
-  *Why* semantic energy arises, diverges, resonates, distills, stabilizes.
-- **Layer-1 – SEA Core Spec**  
-  *How* reasoning and interaction are structured  
-  (Cognitive Persona, Operators, Tension signals, Sequencer, Plugins, Profiles, …).
-- **Layer-2 – Reflection / Reasoning Engines**  
-  Concrete runtimes that execute SEA-based cognition:  
-  self-reflection sessions, self-model sessions, long-running dialogic processes.
-- **Layer-3 – Stable Semantic Artifacts**  
-  Self Model representations, reflection reports, specs, pattern libraries, analytics surfaces.
-
-In short:
-
-> SEA Core describes **how we arrange computation and interaction**.  
-> Semantic Dynamics describes **how semantic structure behaves over time**  
-> when humans and engines repeatedly interact in reflective semantic loops.
+This document is strictly concerned with **Layer-0**.
+Any references to Layers 1–3 in the following sections are **illustrative only** and remain architecture-neutral.
 
 ---
 
@@ -66,7 +71,6 @@ In short:
 **Idea (stub):**
 
 Semantic Emergence describes **how new semantic content appears** from:
-
 - inner self-talk becoming explicit  
 - contextual cues activating latent patterns  
 - human–engine dialogue surfacing structures that were implicit
@@ -93,7 +97,7 @@ For convenience, this theory will refer to one such event as a **mind-pop**:
 Examples:
 
 - "I really want to leave this job, but I’m scared I’ll mess up everything."  
-- "我好像一直在辜負別人的期待，可是我又很想做自己的事。"  
+- "I'm constantly letting others down, but I really want to do my own thing."  
 - "Why do I keep postponing this one email? It’s ridiculous, but I feel stuck."
 
 Characteristic properties:
@@ -105,7 +109,7 @@ Characteristic properties:
 - **Tension-laden** – usually carries some unresolved pull, fog, or overload.  
 - **Repeatable** – tends to re-appear across days / situations until it is integrated.
 
-In a concrete SEA-based runtime, a mind-pop might correspond to:
+In a concrete engine runtime, a mind-pop might correspond to:
 
 - one short free-form utterance in a reflection session, or  
 - one minimal "snapshot" entry in a self-dialogue log.
@@ -142,7 +146,7 @@ Semantic Flow describes **how mind-pops move through threads and branches**:
 - how flows are constrained or amplified by Tension, Operators, and CP state
 
 > *TODO v0.2:* define basic flow patterns (local loop, cross-context jump, damped flow, runaway flow),  
-> and how SEA-level mechanisms (Sequencer, Operators) interact with them.
+> and how engine-level mechanisms (sequencer, operators) interact with them.
 
 ---
 
@@ -186,9 +190,9 @@ These narrow tensions can often be seen purely from **semantic structure** (conc
 
 ---
 
-#### 3.4.2 Broad tension (SEA-aligned Tension signal)
+#### 3.4.2 Broad tension (implementation-level tension signal)
 
-In SEA-based systems, we need a more **phenomenological and operational** notion of Tension – one that includes not only logical contradiction, but also:
+In systems that implement this theory, we need a more **phenomenological and operational** notion of Tension – one that includes not only logical contradiction, but also:
 
 - confusion,
 - emptiness,
@@ -252,9 +256,9 @@ It merely states:
 
 ---
 
-#### 3.4.4 Tension in SEA and analytics
+#### 3.4.4 Tension and Analytics in Implementations
 
-In SEA:
+In a concrete implementation:
 
 - Tension is exposed as an explicit **Tension signal** that:
   - Operators can query to modulate behaviour (e.g., explore vs compress),
@@ -336,7 +340,7 @@ Semantic Dynamics treats Branching as a natural way to **avoid premature closure
   - the subjective sense is "the more I think, the messier it gets,"  
     rather than "the more I think, the clearer my options become."
 
-For SEA-based reflection systems:
+For reflection systems that implement this theory:
 
 - suppressing all Branching leads to **Premature Stabilization**;  
 - encouraging unbounded Branching leads to **Runaway Divergence**.
@@ -494,7 +498,7 @@ During Distillation, one can:
 - look **across** multiple threads in the same branch  
   to identify cross-context patterns.
 
-Semantic Dynamics recommends that any SEA-based system  
+Semantic Dynamics recommends that any engine system  
 that can explicitly track threads will be able to give  
 more coherent, memory-like feedback, e.g.:
 
@@ -541,7 +545,7 @@ Semantic Distillation is the process where:
 
 Distillation reduces **semantic entropy** without erasing important nuances.
 
-> *TODO v0.2:* connect Distillation to SEA Operators and to report / summary generation.
+> *TODO v0.2:* connect Distillation to engine perators and to report / summary generation.
 
 ---
 
@@ -664,7 +668,7 @@ It means **the pacing and capacity are mismatched**:
 
 #### 3.11.4 Design considerations
 
-For SEA-based systems, Overload implies that the system should:
+For systems that implement this theory, overload implies that the system should:
 
 - be able to detect **early indicators**, such as:
   - rapidly increasing branch count per unit time;  
@@ -785,7 +789,7 @@ With Rest:
 
 Semantic Dynamics recommends:
 
-> In SEA Core and reflection engine design,  
+> In engine design,
 > **Rest should be treated as a first-class operator, not an accident.**
 
 This implies that:
@@ -818,7 +822,7 @@ Rather, we use phase-lock as a **structural analogy** to highlight:
 
 ### 4.1 Elements of a semantic loop
 
-In a SEA-based reflection loop we typically have:
+In a reflection loop we typically have:
 
 1. A **Human Cognitive Persona (CP)**  
    - with current narratives, abstraction modes, emotional state.
@@ -1043,7 +1047,7 @@ Good Distillation:
   - recognize as accurate, and  
   - reuse as thinking tools.
 
-At the SEA level, Distillation is implemented via:
+At the engine level, Distillation is implemented via:
 
 - dedicated Operators (summarize, cluster, reframe-as-principle),  
 - guided by Tension signals and the current CP state.
@@ -1515,351 +1519,93 @@ The underlying principle is:
 
 ---
 
-## 6. Relationship with SEA Components
+## 6. Relationship to Implementations (Informative)
 
-Semantic Dynamics (SD) is intentionally **implementation-agnostic**,  
-but it is designed to be tightly compatible with the **SEA Core Specification**.
+This section is **non-normative**.
+It sketches how the concepts introduced above are likely to show up in any system that tries to implement or instrument this theory.
 
-This section provides a **conceptual mapping** between:
+### 6.1 Atomic units and groupings
 
-- SD concepts (mind-pops, threads, branches, Tension, dynamics phases, etc.), and  
-- SEA Core / Runtime entities (Operators, Sequencer, Tension signals, Profiles, Plugins).
+Any implementation will need to make at least three design decisions:
 
-The goal is not to constrain implementations,  
-but to make explicit how SD can inform SEA-based system design.
+1. **What is the atomic semantic event?**  
+   - In this theory, the natural candidate is a **mind-pop**:
+     a small, tension-laden semantic event that is worth recording.
+   - In a system, this may correspond to:
+     - a user utterance,
+     - a structured note,
+     - a tagged highlight,
+     - or any other unit that carries a recognizable piece of lived tension or meaning.
 
----
+2. **How are events grouped over time? (threads)**  
+   - The concept of a **thread** refers to a sequence of related mind-pops that keep returning to a similar question or domain.
+   - An implementation will need:
+     - criteria for grouping events into threads,
+     - mechanisms for merging or splitting threads as understanding evolves.
 
-### 6.1 Overview
+3. **How are alternative lines of sense-making represented? (branches)**  
+   - A **branch** is a cluster of threads that orbit the *same underlying tension* but explore different framings,
+     interpretations, or possible actions.
+   - Implementations may represent branches as:
+     - separate scenario clusters,
+     - alternative narratives,
+     - or competing hypothesis-sets around the same core tension.
 
-At a high level:
+### 6.2 Representing tension
 
-- **Semantic Dynamics** describes:
-  - *what* kinds of semantic structures and regimes tend to arise  
-    (mind-pops → threads → branches → Self Model facets → artifacts), and  
-  - *how* these structures move through Emergence, Divergence, Resonance,  
-    Distillation, Stabilization, Crystallization, Overload, and Rest.
+The theory distinguishes between:
 
-- **SEA Core** provides:
-  - a minimal set of **Operators** (e.g., CoModel, CoStructure, TensionAnalysis, RhythmTransition),  
-  - a **Sequencer** that steers the reasoning rhythm using Tension signals, and  
-  - a **Profile / Plugin** architecture to extend behaviour.
+- **narrow semantic tension** (structural misalignment in the semantic field),
+- and **broader, experiential tension** (conflict, fog, overload, etc.).
 
-The mapping below shows how SD’s vocabulary can be grounded in SEA:
+Any implementation will need to decide:
 
-- SD defines the **phenomenology and structures** to track.  
-- SEA defines the **mechanisms and contracts** to operate on them.
+- how tension is observed (self-report, indirect signals, pattern recognition),
+- how it is encoded (discrete categories, continuous scales, mixed),
+- and how it influences the system’s behavior (e.g., when to encourage divergence, when to nudge towards distillation or rest).
 
----
+The concrete shape of a "tension signal" is intentionally left open;
+what matters is that tension is treated as a **first-class driver of dynamics**, not as a side effect.
 
-### 6.2 Structural Units: Events, Threads, Branches, Ledgers
+### 6.3 Dynamics, phases, and regimes
 
-| SD Concept                    | SEA Component / Layer                                                     | Relationship and Notes                                                                                                                                                                                                                           |
-| ----------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| mind-pop (event)              | Runtime utterance / semantic intent unit                                  | A mind-pop corresponds to a minimal reflection unit: a short free-form input captured as "Semantic Intent" for CoModel, or as a logged utterance in a reflection session. SEA Core does not standardize this type, but runtimes MAY define one.  |
-| Semantic Thread               | Runtime grouping of related utterances/steps                              | A thread is a runtime-level construct: a logical grouping of mind-pops that share a tension/topic. SEA Core does not mandate threads, but a SEA Runtime MAY expose a "thread id" or equivalent for cross-session continuity.                     |
-| Semantic Branch               | Higher-order grouping of threads/hypotheses                               | A branch is a structural cluster of threads that represent alternative directions around the same Tension. At SEA level, this appears as part of the Abstract Model / Layered Structure produced by CoModel / CoStructure.                       |
-| Self Model facet              | Profile-level, long-lived abstract structure                              | A facet is a candidate stable structure distilled from many threads and branches. SEA Profiles MAY encode facets as long-lived preferences, patterns, or constraints that influence reasoning. SD assumes such facets exist; Profiles host them. |
-| Cognitive Branch Ledger (CBL) | Long-range persistence / indexing layer (outside SEA Core, above Runtime) | CBL is a conceptual ledger tracking branch/thread evolution over time. At SEA level, it corresponds to persistent runtime data (logs, indices, metadata) that a Profile or Runtime can query. SEA Core does not prescribe its exact format.      |
+The theory proposes a typical cycle:
 
+> Emergence → Divergence → Resonance → Distillation → Stabilization → Crystallization
 
+Implementations may choose to:
 
-Key points:
+- explicitly annotate events or intervals with phase labels,
+- infer phases from behavior patterns (e.g., many new branches with little summarization),
+- or simply use the cycle as a design lens when shaping interaction patterns and system responses.
 
-- **SEA Core** does not define "thread," "branch," or "CBL" as normative types,
-but SD suggests where such constructs would sit:
-  - threads and branches in **runtime / abstract model structure**,
-  - ledgers in **persistent runtime data** consulted by Profiles / Plugins.
-- A conformant SEA Runtime can choose not to explicitly model threads/branches,
-but then it cannot fully leverage SD’s structure-oriented insights.
+Similarly, regimes such as **runaway divergence**, **premature stabilization**, **chronic oscillation**, **semantic overload**, and **collapsed flow** can be used as:
 
----
+- diagnostic categories,
+- triggers for certain interventions,
+- or higher-level summaries of how a given interaction or session is going.
 
-### 6.3 Signals and States: Tension, CR, Overload, Rest
+### 6.4 Discovery systems and rhythm descriptors
 
-| SD Concept                  | SEA Component / Layer                                                    | Relationship and Notes                                                                                                                                                                                                         |
-| --------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Narrow semantic tension     | Operator: TensionAnalysis (Tension Field output)                         | Narrow tension (conceptual contradictions, competing abstractions) is modeled as part of the **Tension Field** produced by TensionAnalysis over the Abstract Model and Layered Structure.                                      |
-| Broad Tension (capital "T") | Tension signal; Sequencer inputs; Profile weighting                      | Broad Tension (including fog, no-idea, overload) maps to SEA’s **Tension** concept: an explicit signal influencing Operator selection and decision weighting. Profiles MAY adjust how different tension types are prioritized. |
-| Cognitive Resonance (CR)    | Composite runtime state (CP state + Tension Field + Sequencer behaviour) | CR is a runtime regime where the CP’s abstraction mode, the engine’s modeling, and the active context/vocabulary are phase-locked. SEA Core does not name CR, but a Runtime MAY track it as a special "high-alignment" state.  |
-| Semantic Overload           | Runtime diagnostic; Tension signal patterns                              | Overload is a runtime regime inferred from high Tension intensity, many active threads/branches, and weak Distillation/Rest. SEA Core does not define it, but a Runtime MAY surface it as part of the current cognitive state. |
-| Semantic Rest               | Runtime mode; Sequencer configuration; Operator strategy                 | Rest is modeled as a mode in which the Sequencer and Operators bias toward low Emergence, low branching, and light summarization/closure. Profiles can bias the rhythm so that Rest becomes a recognizable regime.             |
+Some implementations may introduce a **discovery system**:
 
+- a component that observes many sessions over time,
+- identifies characteristic patterns in semantic dynamics,
+- and derives descriptions of a person’s typical cognitive rhythm.
 
-Key points:
+In this document we call such descriptions **Cognitive Rhythm Descriptors**.
+They may include, for example:
 
-- SD does not require that CR / Overload / Rest be formal types in SEA Core,
-but recommends treating them as **recognizable runtime regimes**.
-- The **Tension signal** is the primary SEA-level hook for SD:
-  - TensionAnalysis produces structured tension data.
-  - RhythmTransition and Operators react to it.
-  - Profiles adjust how different kinds of tension are prioritized.
+- preferred balances between emergence and distillation,
+- typical failure modes under high tension,
+- sensitivity to certain kinds of branching,
+- or characteristic transitions between functional roles
+  (observe, frame, abstract, structure, tension-check, decide, meta-reflect, …).
 
----
+How such descriptors are represented, and how they are used by any particular engine or protocol,
+is outside the scope of this theory.
+Semantic Dynamics only supplies the **vocabulary** for talking about these rhythms and their building blocks.
 
-### 6.4 Processes and Phases: Dynamics Cycle ↔ Operators & Sequencer
-
-| SD Phase        | SEA Components                                                                | Typical Realization in a SEA Runtime                                                                                                                                                                                          |
-| --------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Emergence       | CoModel; basic input handling                                                 | New mind-pops are interpreted as Semantic Intent and transformed into Abstract Models via CoModel. The Runtime logs mind-pops and early structures.                                                                           |
-| Divergence      | CoModel; CoStructure; Plugins; Sequencer (exploration bias)                   | Multiple alternative models/framings are generated and structured. Plugins may provide additional explorations. The Sequencer favors Operators that expand possibilities rather than compress them.                           |
-| Resonance       | TensionAnalysis; CP state; Sequencer                                          | TensionAnalysis and runtime signals indicate that certain framings strongly match the CP’s latent structure. The Sequencer starts to favor elaboration along these lines instead of opening new branches.                     |
-| Distillation    | CoStructure; TensionAnalysis; summary/abstraction Operators (Core or Plugins) | Operators that summarize, cluster, and name patterns are invoked. TensionAnalysis is used to identify core trade-offs and patterns. Plugins may support domain-specific Distillation.                                         |
-| Stabilization   | Sequencer; Profile; runtime state tracking                                    | The Sequencer and Profile bias toward re-using and testing existing structures rather than generating new ones. New mind-pops are checked against candidate structures; those that repeatedly fit strengthen stabilization.   |
-| Crystallization | Presentation/narrative Operators; export layer                                | Stabilized structures are externalized as artifacts: Self Model views, reports, specs, pattern libraries. Presentation operators (e.g., Narrativize) produce human-consumable representations at multiple abstraction levels. |
-
-
-Notes:
-- The dynamics cycle is **not a fixed pipeline**; SEA explicitly forbids rigid pipelines.
-- Instead, the **Sequencer** uses Tension signals, CP state, and Profile biases
-to move between phases in a non-linear way.
-
----
-
-### 6.5 SEA Profiles and Plugins as Dynamics Shapers
-
-SEA Profiles and Plugins provide natural loci to encode Semantic Dynamics concerns.
-
-| SD Concern / Pattern                          | SEA Mechanism                      | Example Influence                                                                                                                                                            |
-| --------------------------------------------- | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Branching depth / breadth                     | Profile + Sequencer (rhythm bias)  | Profile may encode how aggressively to branch under certain tension types; the Sequencer uses this to limit or expand Divergence.                                            |
-| Distillation strength (how often, how strong) | Profile + Operator selection       | Profile can set how often summaries are requested; Plugins can introduce specialized Distillation Operators (e.g., stronger clustering, pattern naming).                     |
-| Rest scheduling                               | Profile + Sequencer configuration  | Profile may define preferred Rest intervals or conditions; the Sequencer can enter a "Rest mode" where it selects low-intensity, integrative Operators.                      |
-| Overload thresholds                           | Runtime heuristics + Profile prefs | Runtime defines Overload detection heuristics and exposes them as part of current cognitive state; Profiles adjust sensitivity and preferred responses to Overload.          |
-| CR detection and use                          | Runtime state + Plugins            | Runtime may track CR-like states (high alignment); Plugins can implement special actions when CR is detected (e.g., naming facets, proposing new structures to crystallize). |
-
-
-
-In general:
-- **Profiles** encode **stable tendencies**:
-  - preferred branching style,
-  - tolerance for ambiguity,
-  - default balance between exploration and Distillation,
-  - desired rest rhythm.
-- **Plugins** encode **additional capabilities**:
-  - richer Distillation strategies,
-  - specialized TensionAnalysis for certain domains,
-  - custom narrative / visualization for Crystallization.
-
-Semantic Dynamics supplies the vocabulary (e.g., "Overload," "Rest," "CR," "healthy branching"),
-while SEA Profiles and Plugins supply the **concrete knobs and mechanisms**.
-
-
----
-
-### 6.6 Discovery Engine: From Dynamics to Rhythm
-
-Semantic Dynamics is primarily a *descriptive* layer:  
-it explains how mind-pops, threads, branches, and Tension evolve over time.
-
-A **Discovery Engine** is an *analytics layer* that:
-
-- observes many SD-style flows (mind-pops, threads, branches, dynamics phases),  
-- infers a person’s or system’s **typical cognitive rhythm**, and  
-- emits **SEA-compatible artifacts** such as RhythmSpecs and Profile hints.
-
-It does not belong to SEA Core.  
-It is an SD-informed component that *produces* inputs for SEA:
-
-- Cognitive Rhythm Descriptors (CR-Descriptors)  
-- Candidate Rhythm Specifications (RhythmSpecs)  
-- Optional SEA Profile parameters.
-
-#### 6.6.1 Role in the Stack
-
-At a high level:
-
-- SD gives the **vocabulary and structures** for semantic movement.  
-- The Discovery Engine **measures** those movements over time.  
-- SEA Runtimes **execute** a chosen rhythm (RhythmSpec) in real-time reasoning.
-
-The Discovery Engine typically operates on:
-
-- logs of reflection / reasoning sessions,  
-- sequences of mind-pops and engine responses,  
-- and optionally Self Model evolution and tension ledgers.
-
-Its outputs are:
-
-- **descriptive** – summarizing how a person or system tends to move;  
-- **compilable** – convertible into SEA-level rhythm artifacts.
-
-#### 6.6.2 Inputs: Observed Semantic Flows
-
-A Discovery Engine consumes SD-structured data, such as:
-
-- **Mind-pop sequences**  
-  - individual utterances or entries, each with context (time, domain, tension tags).  
-- **Threads and branches**  
-  - grouped mind-pops showing continuity across time or context.  
-- **Dynamics phase annotations** (if available)  
-  - Emergence, Divergence, Resonance, Distillation, Stabilization, Overload, Rest.  
-- **Tension records**  
-  - narrow / broad Tension types, intensity, and changes across episodes.
-
-From SD’s perspective, the Discovery Engine is simply:
-
-> a system that watches how semantic energy moves through mind-pops, threads, and branches  
-> and tries to infer a stable *rhythm pattern* behind those movements.
-
-#### 6.6.3 Functional Tagging Schema v0.1
-
-To connect SD flows with SEA’s cognitive state space,  
-the Discovery Engine needs a way to tag individual **micro-steps** in a session.
-
-One practical approach is a **Functional Tagging Schema** aligned with SEA’s  
-Core Functional Layers and Auxiliary Functional Zones:
-
-- `OBSERVE` – Observe Zone (auxiliary)  
-  - gathering or revisiting raw material, reading, retrieving, calling tools.  
-
-- `FRAME` – Semantic Interpretation  
-  - naming, reframing, clarifying intent and scope, "what are we talking about?".  
-
-- `ABSTRACT` – Abstract Modeling  
-  - extracting patterns, invariants, conceptual models.  
-
-- `STRUCTURE` – Layered Structuring  
-  - decomposing into parts, layers, responsibilities, interfaces.  
-
-- `TENSION` – Tension Analysis  
-  - surfacing conflicts, trade-offs, fog, overload, misalignment.  
-
-- `DECIDE` – Decision Synthesis  
-  - committing to a direction, principle, structural choice, or next step.  
-
-- `META` – Meta-Reflect Zone (auxiliary)  
-  - reflecting on the process or rhythm itself, adjusting granularity or approach.
-
-In practice, a Discovery Engine MAY:
-
-- segment a session into **utterance-level steps** (human + engine), and  
-- assign one dominant Functional Tag to each step,  
-  possibly with secondary tags (e.g., FRAME+TENSION).
-
-This tagging does **not** need to be perfect.  
-It is sufficient that, over many sessions, stable patterns emerge.
-
-#### 6.6.4 Cognitive Rhythm Descriptor (CR-Descriptor v0.1)
-
-A **Cognitive Rhythm Descriptor (CR-Descriptor)** is a summary object that describes:
-
-- how often different Functional Tags appear,  
-- how they tend to follow one another,  
-- and how Tension and context influence transitions.
-
-At minimum, a CR-Descriptor MAY include:
-
-- **Functional distribution**  
-  - relative frequencies of OBSERVE / FRAME / ABSTRACT / STRUCTURE / TENSION / DECIDE / META.  
-- **Transition statistics**  
-  - empirical probabilities of moving from tag A to tag B.  
-- **Driver correlations**  
-  - how different Tension types / intensities affect transitions.  
-- **Stability indicators**  
-  - whether certain loops (e.g., FRAME ↔ TENSION) are persistent or rare.
-
-An illustrative (non-normative) YAML sketch:
-
-```yaml
-cr_descriptor:
-  subject_id: "anon-123"
-  window: "last_40_sessions"
-
-  functional_distribution:
-    OBSERVE:   0.08
-    FRAME:     0.22
-    ABSTRACT:  0.18
-    STRUCTURE: 0.20
-    TENSION:   0.22
-    DECIDE:    0.07
-    META:      0.03
-
-  transitions:
-    "FRAME->ABSTRACT":
-      prob: 0.63
-      typical_tension: ["vagueness", "ambiguity"]
-    "ABSTRACT->STRUCTURE":
-      prob: 0.54
-      typical_tension: ["need_for_action"]
-    "STRUCTURE->TENSION":
-      prob: 0.71
-      typical_tension: ["boundary_conflict", "overload"]
-    "TENSION->FRAME":
-      prob: 0.29
-      typical_tension: ["misframing"]
-    "TENSION->DECIDE":
-      prob: 0.18
-      typical_tension: ["low_residual_tension", "deadline"]
-
-  stability:
-    dominant_loops:
-      - ["FRAME", "ABSTRACT", "STRUCTURE", "TENSION"]
-    decision_style: "late_commit_with_rework"
-    overload_prone_phases: ["Divergence", "Resonance"]
-```
-
-This CR-Descriptor is still **descriptive**.
-It says "how this subject tends to move" without yet deciding _which_ rhythm the engine should execute.
-
-
-#### 6.6.5 From CR-Descriptor to RhythmSpec and Profiles
-
-To inform SEA, the Discovery Engine can **compile** a CR-Descriptor into:
-
-1. Candidate RhythmSpec(s)
-- choose a manageable subset of states
-(e.g., FRAME, ABSTRACT, STRUCTURE, TENSION, DECIDE, optionally META / OBSERVE);
-- convert high-probability transitions into explicit RhythmSpec transitions;
-- express driver correlations as **conditions** on transitions
-(e.g., misframing tension → TENSION→FRAME).
-
-2. Profile hints
-
-- infer qualitative tendencies such as:
-  - "frame-heavy, decision-late,"
-  - "observe-heavy, oscillation-prone,"
-  - "structure-centric under high tension."
-- these can become inputs to SEA Profiles (bias parameters), without changing SEA Core semantics.
-
-The compilation step is intentionally **human-in-the-loop friendly**:
-- A system MAY propose multiple candidate RhythmSpecs derived from the same CR-Descriptor.
-- A human (or another supervisory process) MAY review, edit, or reject them.
-- The final RhythmSpec is then loaded into a SEA Runtime as the active rhythm for a given subject, context, or session type.
-
-
-#### 6.6.6 Non-Goals
-
-Semantic Dynamics does **not** prescribe:
-- how Functional Tagging must be implemented,
-- which algorithms a Discovery Engine must use,
-- or how often CR-Descriptors and RhythmSpecs must be updated.
-
-Different implementations MAY:
-- use rule-based, statistical, or model-based tagging;
-- operate online (near real-time) or offline (batch over many sessions);
-- optimize for different trade-offs (stability vs adaptability, privacy vs detail).
-
-What SD contributes is a **shared conceptual frame** so that:
-- Discovery Engines, SEA Runtimes, and Self Model artifacts can talk about "rhythm," "tension-driven transitions," and "overload-prone phases" in a consistent way.
-
----
-
-### 6.7 Summary
-
-The relationship between Semantic Dynamics and SEA can be summarized as:
-- SD defines the structures, regimes, and cycles that are worth noticing and shaping.
-- SEA defines the operators, signals, and control flow that can be used to implement such shaping.
-
-A SEA Runtime can be:
-- SEA-conformant without SD-awareness, but then it treats semantic movement as an unstructured side-effect; or
-- SEA + SD-informed, deliberately instrumented with:
-  - mind-pop / thread / branch tracking,
-  - Tension categorization and dynamics-phase awareness,
-  - Overload / Rest handling,
-  - and CR-sensitive sequencing.
-
-The latter mode is what Semantic Dynamics is designed to enable.
 
 ---
 
@@ -1869,7 +1615,7 @@ The latter mode is what Semantic Dynamics is designed to enable.
 **Idea (stub):**
 
 - This v0.2 draft re-aligns SD with:
-  - SEA Core Spec  
+  - Core Spec  
   - Self-Reflection / Self Model specs  
   - analytics schema (tension_axis, session-level metadata)
 - Open questions:
