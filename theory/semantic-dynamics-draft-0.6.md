@@ -1,4 +1,4 @@
-# Semantic Dynamics – Draft 0.5
+# Semantic Dynamics – Draft 0.6
 
 ## 1. Purpose & Scope
 
