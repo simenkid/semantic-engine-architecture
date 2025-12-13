@@ -67,7 +67,7 @@ SEA is a **specification defining what a semantic reasoning engine must do**.
 | **Plugin Lifecycle** | Required state machine that governs plugin registration, validation, activation, execution, and deactivation. |
 
 **Non-normative note:**  
-SEA Core does not prescribe how a RhythmSpec is obtained. It MAY be authored by humans, learned from data, or discovered by upstream systems (e.g., a “Discovery Engine”). SEA only defines how a Runtime must execute a RhythmSpec once one is provided.
+SEA Core does not prescribe how a RhythmSpec is obtained. It MAY be authored by humans, learned from data, or discovered by upstream systems (e.g., a "Discovery Engine"). SEA only defines how a Runtime must execute a RhythmSpec once one is provided.
 
 
 ---
@@ -225,7 +225,7 @@ This design allows SEA v0 to:
 
 - Standardize a minimal, widely applicable basis (the five Core Functional
   Layers); while  
-- Explicitly reserving conceptual “slots” for Observe and Meta-Reflect style
+- Explicitly reserving conceptual "slots" for Observe and Meta-Reflect style
   behavior, so that future revisions and Discovery Engines can make use of them
   without breaking compatibility.
 
@@ -370,7 +370,7 @@ A RhythmSpec is a declarative structure that defines:
   - Contextual conditions defined by the Runtime.
 - **Initial State** – the state in which execution begins.
 - **Termination Conditions** – conditions under which a reasoning episode is considered complete
-  (e.g., Tension below a threshold, explicit user stop signal, or explicit “decision reached”).
+  (e.g., Tension below a threshold, explicit user stop signal, or explicit "decision reached").
 
 Normative requirements:
 
@@ -387,10 +387,10 @@ Normative requirements:
 
 Non-normative examples of RhythmSpecs include:
 
-- A “Simen-style” rhythm that favors  
+- A "Simen-style" rhythm that favors  
   Semantic → Abstract → Layered Structuring → Tension → Decision;
-- A “fast decision” rhythm that prioritizes shallow modeling and quick Tension checks;
-- A “reflection-heavy” rhythm that loops between Tension Analysis and Abstract Modeling
+- A "fast decision" rhythm that prioritizes shallow modeling and quick Tension checks;
+- A "reflection-heavy" rhythm that loops between Tension Analysis and Abstract Modeling
   before any Decision Synthesis is attempted.
 
 
@@ -505,7 +505,7 @@ Plugins interact with **RhythmSpecs** in the following way:
 Normative requirements:
 
 - A Plugin MUST declare which Cognitive States and/or Rhythm modes it is
-  compatible with (e.g., “usable during Tension Analysis and Abstract Modeling”).
+  compatible with (e.g., "usable during Tension Analysis and Abstract Modeling").
 - A Runtime MUST prevent a RhythmSpec from invoking Plugin Operators that are:
   - Not registered, or  
   - Not validated, or  
@@ -515,7 +515,7 @@ A Plugin MUST NOT alter a RhythmSpec at runtime unless:
 
 - The Runtime explicitly exposes a safe mechanism for Rhythm modification; and  
 - Such modifications are themselves governed by explicit, higher-order rules
-  (e.g., a meta-level RhythmSpec for “rhythm switching”).
+  (e.g., a meta-level RhythmSpec for "rhythm switching").
 
 ### 9.4 Plugin Lifecycle
 
@@ -768,7 +768,7 @@ NarrativeSimplify is provided:
 - To demonstrate Plugin declaration, usage, and lifecycle in a concrete way.
 It is not required for SEA Core conformance.
 
-## Appendix B – Example RhythmSpec: “Simen Default Rhythm”
+## Appendix B – Example RhythmSpec: "Simen Default Rhythm"
 *(Non-normative)*
 
 This appendix provides a non-normative example of a Rhythm Specification
@@ -789,7 +789,7 @@ requirements beyond those already defined in §6 and §10.
 
 ### B.1 Informal Description
 
-The “Simen Default Rhythm” can be summarized as:
+The "Simen Default Rhythm" can be summarized as:
 
 > **Frame Semantics → Abstract Modeling → Layered Structuring → Tension Analysis → Decision Synthesis**,  
 > with non-linear re-entry from Tension Analysis back into any prior phase,  
@@ -804,7 +804,7 @@ In words:
 3. **Layered Structuring** – carve the situation into layers, components, and
    interfaces; identify responsibilities and boundaries.
 4. **Tension Analysis** – surface contradictions, trade-offs, overload, and
-   “fog”, and determine where the true pressure lies.
+   "fog", and determine where the true pressure lies.
 5. **Decision Synthesis** – commit to a structural or strategic move, often in
    the form of a re-architecture, plan, or principle.
 
@@ -865,7 +865,7 @@ This RhythmSpec uses the following Cognitive States:
 
 ### B.3 Example RhythmSpec (YAML)
 
-The following YAML example illustrates how the “Simen Default Rhythm” MAY be
+The following YAML example illustrates how the "Simen Default Rhythm" MAY be
 expressed as a RhythmSpec instance.
 
 This is an **illustrative format** only. SEA Core constrains the *structure*
@@ -1014,7 +1014,7 @@ In this RhythmSpec, Tension serves at least four roles:
 
 1. Progression Trigger
   - Movement from `FRAME_SEMANTIC` to `ABSTRACT_MODELING` is driven by tension
-associated with vagueness, once framing is “good enough”.
+associated with vagueness, once framing is "good enough".
 
 2. Diagnostic Router
   - From `TENSION_ANALYSIS`, the type of primary Tension determines whether
@@ -1028,7 +1028,7 @@ enough and a decision surface being sufficiently clear.
   - Post-decision Tension can push the rhythm back into `TENSION_ANALYSIS`,
 preventing premature closure when unresolved conflicts remain.
 
-This illustrates one way in which a RhythmSpec can formalize “tension-driven”
+This illustrates one way in which a RhythmSpec can formalize "tension-driven"
 sequencing without hard-wiring any specific Persona into SEA Core.
 
 ---
