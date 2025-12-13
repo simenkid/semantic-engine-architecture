@@ -11,6 +11,15 @@ Tension → Semantic Motion → Distillation/Stabilization → Crystallization (
 SD is descriptive (orientation + vocabulary), not prescriptive (procedure + diagnosis).
 Use phases and mismatch classes as templates, not a pipeline; aim for usable artifacts, not final truth.
 
+#### Freeze Rules (Draft Stabilization)
+The following elements are intended to remain stable once SD v0.7 is adopted:
+1) **Phase enumeration and spelling**: Emergence, Divergence, Resonance, Distillation, Stabilization, Crystallization, Rest.
+2) **Core mismatch classes and canonical IDs**: M1_MotionExcess, M2_PrematureClosure, M3_OscillatoryNonConvergence, M4_SuppressedFlow.
+3) **Core boundary**: SD core consists of phases + mismatch classes; any finer-grained taxonomy belongs outside the core.
+
+Any change to the above is a **breaking change** and MUST be accompanied by a version bump.
+
+
 ## 2. Two Axioms
 
 ### Axiom 1 — Tension drives semantic motion
